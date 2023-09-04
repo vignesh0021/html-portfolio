@@ -1,0 +1,250 @@
+/* Reset some default styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Basic styling */
+@media (max-width: 700px) {
+    
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+}
+header {
+    background-color: #333;
+    color:yellow;
+    padding: 1em;
+}
+body {
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size:2em;
+    font-weight: bold;
+}
+.slogan{
+    font-size:10px;
+    text-align:center;
+    color:yellow;
+    margin:0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#hero {
+    background-image:url(images/b2.jpg);
+    background-size: cover;
+    color:black;
+    text-align: center;
+    padding: 5em;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.hero-content p{
+    color:yellow;
+    /* color: #900C3F; */
+    font: bolder;
+    font-size: 25px;
+    text-align: center;
+   
+}
+.cta-button {
+    display: inline-block;
+    background-color:red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:25px;
+    font-size: 1.5rem;
+    outline:none;
+}
+.contact-form {
+    display: none;
+        display: none;
+        padding: 1em;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form h2 {
+        margin-bottom: 1em;
+    }
+    
+    .contact-form form input,
+    .contact-form form textarea,
+    .contact-form form button {
+        display: block;
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    .contact-form form button {
+        background-color: #333;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 1.3rem;
+     
+    }
+    
+    .contact-form form button:hover {
+        background-color:rgb(241, 5, 36);
+    }
+   /* about page styling */
+   .about-content {
+    background-color:  #f2f2f2;
+   }
+    .about-content h2,h4{
+        text-align:left;
+        margin: 0 20px;
+        
+        
+    }
+    .about-content p{
+        text-align:left;
+        margin: 0 20px;
+        text-align: justify;
+    }
+
+
+
+/* services page styling */
+
+#services{
+    background-color: #f2f2f2;
+}
+.services-content ,h2 ,p,ul,li{
+    margin-left: 10px;
+    padding:10px;
+
+}
+.service-item li{
+    list-style-type: none;
+    text-align: justify;
+}
+.service-item p{
+    text-align: justify;
+}
+.service-item img{
+    width:600px;
+    height:450x;
+    float:left;
+    margin:0 10px 0 10px;
+
+}
+.service-item{
+    display: flex;
+    flex-direction:column;
+    margin:20px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+/* Base CSS (for all screen sizes) */
+/* Your existing styles for header, logo, slogan, etc. */
+
+/* Styles for the navigation menu */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+/* Styles for the mobile-menu-icon */
+.mobile-menu-icon {
+    display: none; /* Hide the mobile menu icon by default */
+    cursor: pointer;
+}
+
+/* Responsive CSS */
+
+/* Show the menu bar in mobile view */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .logo {
+        text-align: center; /* Center the logo text */
+    }
+
+    .slogan {
+        text-align: center; /* Center the slogan text */
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        display:flex; /* Hide the menu in mobile view by default */
+    }
+
+    .menu li {
+        cursor: pointer;
+    }
+
+    /* Show the mobile menu icon in mobile view */
+    .mobile-menu-icon {
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,38 @@
+
+/* Media query for screens with a maximum width of 768px (e.g., tablets) */
+@media screen and (max-width: 768px) {
+    /* Example: Adjust font size for smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Example: Center-align the navigation menu */
+    nav {
+    
+        text-align: center;
+    }
+
+    /* Example: Adjust the padding of the hero section */
+    #hero {
+        padding: 3em;
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+    /* Example: Adjust font size further for smaller screens */
+    h1 {
+        font-size: 20px;
+    }
+
+    /* Example: Remove left margin for list items in the navigation menu */
+    nav ul li {
+        margin-left: 0;
+    
+    }
+     li:hover {
+        color: yellow;
+    }
+    
+    
+}

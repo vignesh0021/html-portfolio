@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Add this to registerfrom.css */
+.registration-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    /* background-color: #d11d1d; */
+    background-image:url(/css/images/register_formbc.jpg);
+    background-position: center;
+    /* background-size:80rem; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%; /* Ensure the form takes full width */
+    max-width: 400px; /* Set a maximum width for the form */
+    padding: 20px;/*Add some padding around the form elements */
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.registration-form .error{
+    color: red;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #0bd41c;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Style the input boxes when they are focused */
+.registration-form input[type="text"]:focus,
+.registration-form input[type="email"]:focus,
+.registration-form input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.registration-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make the button take full width */
+}
+
+.registration-form button:hover {
+    background-color: #5d08fc;
+}
+/* login form style*/
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    /* background-color: #d11d1d; */
+    background-image:url(/css/images/register_formbc.jpg);
+    background-position: center;
+    /* background-size:80rem; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+.login-container form {
+    width: 100%; /* Ensure the form takes full width */
+    max-width: 400px; /* Set a maximum width for the form */
+    padding: 20px;/*Add some padding around the form elements */
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.login-container h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.login-container .lerror{
+
+    color: red;
+}
+.login-container input{
+width: 95%;
+padding: 8px;
+margin-bottom: 10px;
+border-radius: 5px;
+display: inline-block;
+border: 1px solid #0bd41c;
+border-radius: 5px;
+transition: border-color 0.3s;
+}
+.login-container input{
+border-color: #3498db;
+    outline: none;
+}
+.login-container button{
+background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.login-container button:hover {
+    background-color: #5d08fc;
+}
